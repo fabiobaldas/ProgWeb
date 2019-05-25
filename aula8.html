@@ -1,0 +1,49 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title>Aula 08</title>
+<meta charset="UTF-8">
+<script src="aula8.js"> </script>
+</head>
+<body>
+<h1 onclick="changeText(this)">Click no texto</h1>
+<button onclick="displayDate()">Data</button>
+<p id="demo"/>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#FF0022; width:120px; height:20px; padding:40px;"> Passe o cursor aqui!</div><br>
+<div onmouseover="mDown(this)" onmouseout="mUp(this)" style="background-color:#6600cc; width:120px; height:20px;padding:40px;"> Clica e segura!</div></br>
+
+<form method="Post" action="aula8.php">
+  <fieldset><legend>Cadastro</legend>
+    <input type="button" value="Digitar nome" onclick="nome=prompt('Seu nome','')"/>
+    <input type="button" value="Digitar email" onclick="email=prompt('Seu email','')"/>
+    <input type="button" value="Cadastrar" onclick="escrever(this.form.Area)"/>
+    <p><textarea rows=10 cols=40 name="Area"></textarea>
+    </form>
+  <hr/>
+  <pre>
+    <a href onmouseover="mudaCor('blue')">Azul</a>
+    <a href onmouseover="mudaCor('asure')">Azul Fraco</a>
+    <a href onmouseover="mudaCor('lightblue')">Azul Claro</a>
+    <a href onmouseover="mudaCor('red')">Vermelho</a>
+    <a href onmouseover="mudaCor('yellow')">Amarelo</a>
+    <a href onmouseover="mudaCor('pink')">Rosa</a>
+    <a href onmouseover="mudaCor('violet')">Violeta</a>
+    <a href onmouseover="mudaCor('black')">Preto</a>
+    <a href onmouseover="mudaCor('magenta')">Magenta</a>
+    <a href onmouseover="mudaCor('purple')">Purpura</a>
+    <a href onmouseover="mudaCor('silver')">Cinza</a>
+    <a href onmouseover="mudaCor('orange')">Laranja</a>
+    <a href onmouseover="mudaCor('branco')">white</a>
+  </pre>
+
+  <input type="radio" name="grupo" onclick="document.bgColor='blue'">Azul</input>
+  <input type="radio" name="grupo" onclick="document.bgColor='azure'">Azul Fraco</input>
+  <input type="radio" name="grupo" onclick="document.bgColor='lightblue'">Azul Claro</input>
+  <input type="radio" name="grupo" onclick="document.bgColor='red'">Red</input>
+  <input type="radio" name="grupo" onclick="document.bgColor='yellow'">Amarelo</input>
+  <input type="radio" name="grupo" onclick="document.bgColor='pink'">Rosa</input>
+</body>
+<! -- Efetuar um programa em JS que receba os valores A,B,C e o efetue a soma entre A e C e a
+multiplicação entre B e C e verifique o resultado d soma maior,menor ou igual, ao de multiplicação
+(use o getelementById)-->
+</html>
